@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" id="theme-style" />
+    <title>Movie Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Movie Page</h1>
+      <div class="movie-card">
+        <input type="text" id="movie-title" placeholder="Enter movie title" />
+        <button id="search-btn">Search</button>
+        <div id="movie-details"></div>
+        <div id="poster-container"></div>
+        <button id="add-to-favorites">Add to Favorites</button>
+      </div>
+      <div class="favorites-section">
+        <h2>Favorites</h2>
+        <div id="favorites-container" class="favorites-container"></div>
+        <button id="clear-favorites">Clear Favorites</button>
+      </div>
+      <div class="theme-toggle">
+        <button id="light-theme-btn">Light Theme</button>
+        <button id="dark-theme-btn">Dark Theme</button>
+        <input type="color" id="color-picker" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.title {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.movie-card {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#movie-title {
+  padding: 8px;
+  width: 300px;
+  font-size: 16px;
+}
+
+#search-btn {
+  padding: 8px 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#search-btn:hover {
+  background-color: #555;
+}
+
+#movie-details {
+  margin-top: 40px;
+  text-align: left;
+}
+
+#movie-details p {
+  margin: 8px 0;
+}
+
+#poster-container {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .movie-card {
+    padding: 16px;
+  }
+
+  #movie-title {
+    width: 100%;
+  }
+
+  #search-btn {
+    margin-top: 16px;
+  }
+}
+
+.favorites-section {
+  margin-top: 40px;
+}
+
+.favorites-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.favorite-movie {
+  margin: 10px;
+}
+
+.favorite-movie img {
+  max-width: 100px;
+  height: auto;
+}
+
+.movie-tooltip {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.poster-tooltip {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Стили для карточки фильма в светлой теме */
+.light-theme .movie-card {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для карточки фильма в темной теме */
+.dark-theme .movie-card {
+  background-color: #333;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+/* Стили для кнопок в светлой теме */
+.light-theme #search-btn,
+.light-theme #add-to-favorites,
+.light-theme #clear-favorites,
+.light-theme .theme-toggle button {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Стили для кнопок в темной теме */
+.dark-theme #search-btn,
+.dark-theme #add-to-favorites,
+.dark-theme #clear-favorites,
+.dark-theme .theme-toggle button {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Светлая тема */
+.light-theme {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+/* Темная тема */
+.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Стили для всплывающей подсказки в темной теме */
+.dark-theme .movie-tooltip {
+  color: #fff;
+  background-color: #09a723;
+}
+
